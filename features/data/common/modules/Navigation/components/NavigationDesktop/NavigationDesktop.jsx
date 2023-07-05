@@ -7,7 +7,7 @@ const NavigationDesktop = () => {
     return (
         <Box color="#896991" paddingY='2rem' backgroundColor="white" display={{ base: "none", md: "block" }}>
             <Box maxWidth="1280px" margin="0 auto">
-                <Flex alignItems="center" justifyContent="space-between"  >
+                <Flex alignItems="center" justifyContent="space-between" >
                     <Link href="/ ">
                         <Box display="flex" alignItems="center" gap="2">
                             <HiHomeModern />
@@ -16,12 +16,14 @@ const NavigationDesktop = () => {
                             </Text>
                         </Box>
                     </Link>
-                    {navigationLinks.map((item) => (
-                        <NavigationLink {...item} />
-                    ))}
-                    <Button padding="1.5rem" backgroundColor="#896991" color="#fff" fontSize="0.8rem" fontWeight="medium">
-                        Create Lisitng
-                    </Button>
+                    <Flex gap="12" alignItems="center" fontWeight="medium">
+                        {navigationLinks.map((item) => (
+                            <NavigationLink {...item} />
+                        ))}
+                        <Button padding="1.5rem" backgroundColor="#896991" color="#fff" fontSize="0.8rem" fontWeight="medium">
+                            Create Listing
+                        </Button>
+                    </Flex>
                 </Flex>
             </Box>
         </Box>
