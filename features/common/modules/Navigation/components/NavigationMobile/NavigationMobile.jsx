@@ -2,7 +2,7 @@ import { Box, Flex, Text, Button, Menu, MenuList, MenuButton, MenuItem, IconButt
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { HiHomeModern } from 'react-icons/hi2'
 import Link from 'next/link'
-import { navigationLinks } from 'features/data/common/modules/Navigation/components/NavigationDesktop/navigationConsts.js'
+import { navigationLinks } from '../NavigationDesktop/navigationConsts.js'
 
 const NavigationMobile = () => {
     return (

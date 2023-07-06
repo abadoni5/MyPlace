@@ -1,7 +1,7 @@
 import { Box, Flex, Text, Button } from "@chakra-ui/react"
 import { HiHomeModern } from 'react-icons/hi2'
 import Link from 'next/link'
-import { navigationLinks } from 'features/data/common/modules/Navigation/components/NavigationDesktop/navigationConsts.js'
+import { navigationLinks } from './navigationConsts.js'
 
 const NavigationDesktop = () => {
     return (
@@ -15,7 +15,7 @@ const NavigationDesktop = () => {
                                 MyPlace
                             </Text>
                         </Box>
-                    </Link>
+                    </Link> 
                     <Flex gap="12" alignItems="center" fontWeight="medium">
                         {navigationLinks.map((item) => (
                             <NavigationLink {...item} />
