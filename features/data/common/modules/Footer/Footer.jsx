@@ -2,6 +2,7 @@ import React from 'react'
 import { services, about, workWithUs, ourOffices } from './footerConsts'
 import { SimpleGrid, Text, Link, Flex } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
+import { HiHomeModern } from 'react-icons/hi2'
 
 const Footer = () => {
     return (
@@ -46,6 +47,34 @@ const Footer = () => {
                         ))}
                     </Flex>
                 </SimpleGrid>
+            </Box>
+            <Box backgroundColor="#6a5170"
+                display="flex"
+                padding="2rem"
+                alignItems="center"
+                flexDirection="column"
+                justifyContent="center"
+                color="white"
+            >
+                <Box
+                    display="flex"
+                    gap="2"
+                    alignItems="center"
+                >
+                    <HiHomeModern />
+                    <Text
+                        fontSize="lg"
+                        fontWeight="black"
+                    >
+                        MySpace
+                    </Text>
+                </Box>
+                <Text
+                    marginTop="1rem"
+                    fontSize="xs"
+                >
+                    © 2023 MySpace. All rights reserved.
+                </Text>
             </Box>
         </Box>
     )
