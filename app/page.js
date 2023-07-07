@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <DefaultLayout>
         <HeroBanner />
-        <FeaturedProperties featuredProperties={properties} />
+        <FeaturedProperties properties={properties} />
       </DefaultLayout>
     </>
   );
