@@ -11,7 +11,7 @@ import { Box } from '@chakra-ui/react';
 async function fetchHits() {
   try {
     const { hits } = require('features/data/Properties.json');
-    return { properties: hits };
+    return { properties: hits.slice(0, 5) };
   } catch (error) {
     console.error('Error fetching properties:', error);
     return { properties: [] };
@@ -29,8 +29,6 @@ export default function Home() {
 
     fetchData();
   }, []);
-
-  console.log(properties);
 
   return (
     <Box>
