@@ -23,7 +23,7 @@ const PropertySlider = ({ properties }) => {
         >
             {properties.map((property) => (
                 <SwiperSlide key={property.id}>
-                    <PropertyCard />
+                    <PropertyCard {...property} />
                 </SwiperSlide>
             ))}
         </Swiper>
