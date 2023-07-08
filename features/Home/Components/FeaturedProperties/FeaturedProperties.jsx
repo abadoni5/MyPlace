@@ -1,13 +1,11 @@
 import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
+import PropertySlider from './Components/PropertySlider/PropertySlider'
 
 const FeaturedProperties = ({ properties }) => {
     return (
         <Box backgroundColor="">
-            <Box display="flex"
-                alignItems="center"
-                flexDirection="column"
-                justifyContent="center"
+            <Box 
                 maxWidth="1280px"
                 gap="1rem"
                 margin="0 auto"
@@ -20,6 +18,7 @@ const FeaturedProperties = ({ properties }) => {
                     fontWeight="light"
                     paddingX='2rem'
                     textAlign="center"
+                    marginTop="3rem"
                 >
                     Discover Our Handpicked Properties
                 </Text>
@@ -31,7 +30,7 @@ const FeaturedProperties = ({ properties }) => {
                 >
                     Select from our curated list of properties.
                 </Text>
-                
+                <PropertySlider properties={properties} />
             </Box>
         </Box>
     )
