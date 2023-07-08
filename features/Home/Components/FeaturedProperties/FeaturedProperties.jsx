@@ -3,7 +3,7 @@ import { Box, Text } from '@chakra-ui/react'
 
 const FeaturedProperties = ({ properties }) => {
     return (
-        <Box backgroundColor="#eee6f0">
+        <Box backgroundColor="">
             <Box display="flex"
                 alignItems="center"
                 flexDirection="column"

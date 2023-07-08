@@ -62,7 +62,7 @@ const HeroForm = () => {
                         )}
                     </Checkbox>
                 </FormControl>
-                <Button backgroundColor="#896991" width="100%" fontSize="xl"
+                <Button color="white" backgroundColor="#896991" width="100%" fontSize="xl"
                     padding="2rem" marginTop="2rem"
                 >
                     Download Now
