@@ -8,6 +8,7 @@ import FeaturedProperties from '@/features/Home/Components/FeaturedProperties/Fe
 import MeetTheTeam from 'features/Home/Components/MeetTheTeam';
 import { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
+import Partners from '@/features/Home/Components/Partners/Partners';
 
 async function fetchHits() {
   try {
@@ -37,6 +38,7 @@ export default function Home() {
         <HeroBanner />
         <FeaturedProperties properties={properties} />
         <MeetTheTeam />
+        <Partners />
       </DefaultLayout>
     </Box>
   );
