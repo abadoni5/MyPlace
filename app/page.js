@@ -4,7 +4,8 @@ import styles from './page.module.css';
 import { DefaultContext } from 'react-icons';
 import HeroBanner from '@/features/Home/Components/HeroBanner';
 import DefaultLayout from '@/features/Layouts/DefaultLayout';
-import FeaturedProperties  from '@/features/Home/Components/FeaturedProperties/FeaturedProperties.jsx';
+import FeaturedProperties from '@/features/Home/Components/FeaturedProperties/FeaturedProperties.jsx';
+import MeetTheTeam from 'features/Home/Components/MeetTheTeam';
 import { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 
@@ -35,6 +36,7 @@ export default function Home() {
       <DefaultLayout>
         <HeroBanner />
         <FeaturedProperties properties={properties} />
+        <MeetTheTeam />
       </DefaultLayout>
     </Box>
   );

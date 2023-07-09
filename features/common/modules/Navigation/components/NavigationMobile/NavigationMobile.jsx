@@ -7,7 +7,7 @@ import { navigationLinks } from '../NavigationDesktop/navigationConsts.js'
 const NavigationMobile = () => {
     return (
         <div>
-            <Box color="#896991" padding='2rem' backgroundColor="blue.50" display={{ base: "block", md: "none" }}>
+            <Box color="#896991" padding='2rem' backgroundColor="" display={{ base: "block", md: "none" }}>
                 <Flex alignItems="center" justifyContent="space-between"  >
                     <Link href="/ ">
                         <Box display="flex" alignItems="center" gap="2">

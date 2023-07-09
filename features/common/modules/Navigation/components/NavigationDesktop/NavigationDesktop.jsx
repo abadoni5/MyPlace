@@ -5,7 +5,7 @@ import { navigationLinks } from './navigationConsts.js'
 
 const NavigationDesktop = () => {
     return (
-        <Box color="#896991" paddingY='2rem' backgroundColor="blue.50" display={{ base: "none", md: "block" }}>
+        <Box color="#896991" paddingY='2rem' backgroundColor="" display={{ base: "none", md: "block" }}>
             <Box maxWidth="1280px" margin="0 auto">
                 <Flex alignItems="center" justifyContent="space-between" >
                     <Link href="/ ">
