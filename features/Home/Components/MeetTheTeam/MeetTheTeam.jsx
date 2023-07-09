@@ -5,7 +5,7 @@ import AgentCard from './components/AgentCard/AgentCard.jsx'
 
 const MeetTheTeam = () => {
     return (
-        <Box maxWidth='1280px' margin='0 auto' paddingY={{ base: '3rem', sm: '6rem' }}>
+        <Box maxWidth='1280px' margin='0 auto' >
             <Text fontSize={{ base: "4xl", sm: "5xl" }}
                 lineHeight="shorter"
                 fontWeight="light"

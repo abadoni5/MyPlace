@@ -9,6 +9,7 @@ import MeetTheTeam from 'features/Home/Components/MeetTheTeam';
 import { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 import Partners from '@/features/Home/Components/Partners/Partners';
+import Testimonials from '@/features/Home/Components/Testimonials/Testimonials';
 
 async function fetchHits() {
   try {
@@ -39,6 +40,7 @@ export default function Home() {
         <FeaturedProperties properties={properties} />
         <MeetTheTeam />
         <Partners />
+        <Testimonials />
       </DefaultLayout>
     </Box>
   );

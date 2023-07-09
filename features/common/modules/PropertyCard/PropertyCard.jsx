@@ -21,7 +21,7 @@ const PropertyCard = (property) => {
 
     return (
         <Box marginBottom="4rem"
-            backgroundColor="white"
+            backgroundColor="blue.50"
         >
             <Link href={`{/properties/${externalID}}`}>
                 <Box backgroundImage={`url("${coverPhoto}")`} height="250px"

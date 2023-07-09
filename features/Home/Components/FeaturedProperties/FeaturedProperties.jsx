@@ -4,7 +4,7 @@ import PropertySlider from './Components/PropertySlider/PropertySlider'
 
 const FeaturedProperties = ({ properties }) => {
     return (
-        <Box backgroundColor="blue.50" >
+        <Box backgroundColor="" >
             <Box
                 maxWidth="1280px"
                 margin="0 auto"
