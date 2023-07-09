@@ -23,7 +23,8 @@ const PropertyCard = (property) => {
         <Box marginBottom="4rem"
             backgroundColor="blue.50"
         >
-            <Link href={`{/properties/${externalID}}`}>
+            <Link href={`/properties/${externalID}`}>
+                {console.log(externalID)}
                 <Box backgroundImage={`url("${coverPhoto}")`} height="250px"
                     backgroundPosition="center center"
                     backgroundSize="cover"
