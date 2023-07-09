@@ -5,14 +5,16 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useIsDesktop } from 'features/common/hooks/useIsDesktop.js'
 
 import PropertyCard from 'features/common/modules/PropertyCard';
 
 const PropertySlider = ({ properties }) => {
+    const { isDesktop } = useIsDesktop()
     return (
         <Swiper
             spaceBetween={10}
-            slidesPerView={3}
+            slidesPerView={isDesktop ? 3 : 1}
             loop={true}
             loopFillGroupWithBlank={true}
             centeredSlides={true}
