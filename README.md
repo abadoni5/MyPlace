@@ -33,6 +33,10 @@ Next.js, on the other hand, introduced me to its new app directory structure, en
 
 Building MyPlace also taught me the best practices for routing a website. Leveraging Next.js's built-in routing capabilities, I implemented dynamic routing to handle different property pages and search queries. This allowed for smooth transitions between pages, improving the overall user experience.
 
+## Deployed Link
+
+https://my-place-git-main-abadoni5.vercel.app
+
 ## Getting Started
 
 To run MyPlace locally, follow these steps:
