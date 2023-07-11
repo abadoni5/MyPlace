@@ -10,14 +10,12 @@ import { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 import Partners from '@/features/Home/Components/Partners/Partners';
 import Testimonials from '@/features/Home/Components/Testimonials/Testimonials';
+import { get } from 'react-hook-form';
+import { getProperties } from '@/features/Home/Components/api/getProperties';
 
 async function fetchHits() {
-  try {
-    const { hits } = require('features/data/Properties.json');
-    return { properties: hits.slice(0, 5) };
-  } catch (error) {
-    console.error('Error fetching properties:', error);
-  }
+  const properties = await getProperties(5);
+  return { properties };
 }
 
 export default function Home() {

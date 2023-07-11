@@ -4,15 +4,18 @@ import React from 'react'
 import { Box, SimpleGrid } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 import PropertyCard from 'features/common/modules/PropertyCard';
+import { getProperties } from '@/features/Home/Components/api/getProperties';
 
 async function fetchHits() {
-  try {
-    const { hits } = require('features/data/Properties.json');
-    return { properties: hits};
-  } catch (error) {
-    console.error('Error fetching properties:', error);
-    return { properties: [] };
-  }
+  // try {
+  //   const { hits } = require('features/data/Properties.json');
+  //   return { properties: hits};
+  // } catch (error) {
+  //   console.error('Error fetching properties:', error);
+  //   return { properties: [] };
+  // }
+  const properties = await getProperties();
+  return { properties };
 }
 
 const page = () => {
